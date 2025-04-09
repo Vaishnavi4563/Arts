@@ -1,0 +1,139 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout - MVD Fashion</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .col-half {
+      flex: 1 1 48%;
+    }
+    .order-summary {
+      background: #fafafa;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .order-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .total {
+      font-weight: bold;
+      font-size: 1.2rem;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+    }
+    button {
+      background: #000;
+      color: #fff;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Checkout</h2>
+
+    <!-- Customer Info -->
+    <div class="section">
+      <h3>Customer Information</h3>
+      <div class="row">
+        <div class="col-half">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" placeholder="John" />
+        </div>
+        <div class="col-half">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" placeholder="Doe" />
+        </div>
+      </div>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="john@example.com" />
+    </div>
+
+    <!-- Shipping Address -->
+    <div class="section">
+      <h3>Shipping Address</h3>
+      <label for="address">Address</label>
+      <input type="text" id="address" placeholder="123 Street Name" />
+      <div class="row">
+        <div class="col-half">
+          <label for="city">City</label>
+          <input type="text" id="city" placeholder="Bangalore" />
+        </div>
+        <div class="col-half">
+          <label for="postal">Postal Code</label>
+          <input type="text" id="postal" placeholder="560001" />
+        </div>
+      </div>
+      <label for="country">Country</label>
+      <select id="country">
+        <option>India</option>
+        <option>USA</option>
+        <option>UK</option>
+      </select>
+    </div>
+
+ 
+<!-- Payment Method -->
+<div class="section">
+  <h3>Payment Method</h3>
+  
+  <!-- Payment Options -->
+  
+  </label>
+  <label style="margin-left: 30px;">
+    <input type="radio" name="payment" value="cod" onclick="togglePaymentFields(false)" />
+    Cash on Delivery
+  </label>
+
+         <!-- Place Order Button -->
+    <button type="submit">Place Order</button>
+  </div>
+
+</body>
+</html>
